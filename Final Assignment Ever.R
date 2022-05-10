@@ -8,6 +8,7 @@ library(quantmod)
 library(shiny)
 library(shinyWidgets)
 
+
 #Data path
 file_path <- "multiTimeline.csv"
 
@@ -168,7 +169,7 @@ dashboardBody(
                             tabItem(tabname = "feature5",
                                     fluidPage(
                                         box(title = "Transformed Plot of Battle Royale Interest", width = 12, solidHeader = TRUE, status = "primary",
-                                            plotlyOutput("DecompPlot", height = 250)))))),
+                                            plotlyOutput("DecompPlot", height = 250)))),
                             #sixth tab
                             tabItem(tabname = "feature6",
                                 fluidPage(
@@ -206,7 +207,7 @@ dashboardBody(
                                         plotlyOutput("DriftForecast", height = 250))))
                         
                         
-)
+)))
 
 
 
